@@ -1,7 +1,9 @@
 from django.contrib import admin
-from .models import AddressIP, Session
+from .models import AddressIP, Session, PasswordResetToken, ValidEmailToken
 
 admin.site.register(AddressIP)
+admin.site.register(PasswordResetToken)
+admin.site.register(ValidEmailToken)
 
 @admin.register(Session)
 class SessionAdmin(admin.ModelAdmin):

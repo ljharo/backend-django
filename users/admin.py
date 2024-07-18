@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import  PasswordResetToken, ValidEmailToken
+from .models import  User
 
-admin.site.register(PasswordResetToken)
-admin.site.register(ValidEmailToken)
+admin.site.register(User)
